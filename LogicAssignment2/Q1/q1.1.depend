@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1540387146 source:d:\q1.1\main.cpp
+	<iostream>
+	<vector>
+	"isSymbol.h"
+	"postfix.h"
+	"binarytree.h"
+	"infixtraversal.h"
+
+1540272789 d:\q1.1\issymbol.h
+
+1540379480 d:\q1.1\postfix.h
+
+1540204022 d:\q1.1\node.h
+
+1540293315 d:\q1.1\binarytree.h
+
+1540272272 d:\q1.1\infixtraversal.h
+

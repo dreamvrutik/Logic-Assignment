@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include "Andelimination.h"
+#include "AndIntroduction.h"
+#include "OrIntroduction.h"
+#include "ImplicationElimination.h"
+#include "ModusTollens.h"
+int main(){
+    int n,p,k,i,val_lines=0,tot_lines=0,flag=0;
+scanf("%d",&n);
+char a[n][100];
+for(i=0;i<n;i++){
+    scanf("%s",&a[i]);///storing input in a 2-D String array
+}
+for(i=0;i<n;i++){
+        int j=0;
+    while(a[i][j]!='/'){
+        j++;
+    }
+    if(a[i][j+1]=='^'&&a[i][j+2]=='e'){
+        tot_lines++;
+        if(AndElimination(i,j,a))val_lines++;
+    }
+    if(a[i][j+1]=='^'&&a[i][j+2]=='i'){
+        tot_lines++;
+        if(AndIntroduction(i,j,a))val_lines++;
+    }
+    if(a[i][j+1]=='>'&&a[i][j+2]=='e'){
+        tot_lines++;
+        if(ImplicationElimination(i,j,a))val_lines++;
+    }
+    if(a[i][j+1]=='V'&&a[i][j+2]=='i'){
+        tot_lines++;
+        if(OrIntroduction(i,j,a))val_lines++;
+    }
+    if(a[i][j+1]=='M'&&a[i][j+2]=='T'){
+        tot_lines++;
+        if(ModusTollens(i,j,a))val_lines++;
+    }
+   if(tot_lines>0){
+    if(a[i][j+1]=='P'||a[i][j+1]=='p') flag=1;
+   }
+}
+if(val_lines==tot_lines&&flag==0)
+    {printf("Valid Proof");}
+else
+    {printf("Invalid proof");
+}
+}
+

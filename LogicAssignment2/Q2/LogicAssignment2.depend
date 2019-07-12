@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1540226759 source:f:\logicassignment2\main.c
+	<stdio.h>
+	"Andelimination.h"
+	"AndIntroduction.h"
+	"OrIntroduction.h"
+	"ImplicationElimination.h"
+	"ModusTollens.h"
+
+1540226176 f:\logicassignment2\andelimination.h
+
+1540226480 f:\logicassignment2\andintroduction.h
+
+1540226656 f:\logicassignment2\orintroduction.h
+
+1540226750 f:\logicassignment2\implicationelimination.h
+
+1540226702 f:\logicassignment2\modustollens.h
+
